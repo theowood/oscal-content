@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assessment-results
-    uuid="7d0221ac-91a2-4798-94a2-c310224fa42b"
+<assessment-results uuid="8da1dfe1-4aec-48e2-bacb-431ad61486c2"
     xmlns="http://csrc.nist.gov/ns/oscal/1.0">
     <metadata>
-        <title>IFA Assessment Results</title>
-        <last-modified>2024-11-07T16:10:00.000000-00:00</last-modified>
-        <version>1.0</version>
-        <oscal-version>1.1.2</oscal-version>
+        <title>IFA SYSTEM1234 Assessment Results</title>
+        <last-modified>2025-07-06T14:10:00.000000-00:00</last-modified>
+        <version>1.0.0</version>
+        <oscal-version>1.1.3</oscal-version>
         <revisions>
             <revision>
-              <title>IFA GoodRead Continuous Monitoring Assessment Results June 2023</title>
-              <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
-              <version>202306-002</version>
-              <oscal-version>1.1.2</oscal-version>
-              <link rel="version-history" href="#ec0dad37-54e0-40fd-a925-6d0bdea94c0d"/>
-              <remarks>
-                <p>This OSCAL version of the IFA Assessemnt Results was importing an nonexisting Assessment Plan.</p>
-              </remarks>
+                <title>IFA GoodRead Continuous Monitoring Assessment Results June 2023</title>
+                <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
+                <version>202306-002</version>
+                <oscal-version>1.1.2</oscal-version>
+                <link rel="version-history" href="#ec0dad37-54e0-40fd-a925-6d0bdea94c0d"/>
+                <remarks>
+                    <p>This OSCAL version of the IFA Assessment Results was importing an nonexisting Assessment Plan.</p>
+                </remarks>
             </revision>
         </revisions>
         <role id="assessor">
@@ -34,8 +33,11 @@
         <responsible-party role-id="assessor">
             <party-uuid>e7730080-71ce-4b20-bec4-84f33136fd58</party-uuid>
         </responsible-party>
+        <remarks>
+            <p>In this version of the artifact, the content was updated to OSCAL v1.1.3 and the system name was changed. Imported Assessment Plan was corrected. Other enhancements were implemented.</p>
+        </remarks>
     </metadata>
-    <import-ap href="../../ap/xml/ifa_assessemnt-plan-example.xml" />
+    <import-ap href="../../ap/xml/ifa_assessment-plan-example.xml" />
     <local-definitions>
         <activity uuid="cf5d53fe-6043-4c68-9ed6-6b258909febf">
             <title>Test System Elements for Least Privilege Design and Implementation</title>
@@ -47,55 +49,55 @@
             </description>
             <prop name="method" value="TEST" />
             <step uuid="57f8cfb8-fc3f-41d3-b938-6ab421c92574">
-                <title>Configure Cross-Account IAM Role Trust for GoodRead and Assessor AwesomeCloud
+                <title>Configure Cross-Account IAM Role Trust for SYSTEM1234 and Assessor AwesomeCloud
                     Accounts</title>
                 <description>
-                    <p>The GoodRead system engineer will coordinate with the assessor's engineering
+                    <p>The IFA SYSTEM1234 system engineer will coordinate with the assessor's engineering
                         support staff to configure an IAM role trust. A service account for
                         automation with its own role with the assessor's AwesomeCloud account can
-                        assume the role for read-only assessor operations within the GoodRead
+                        assume the role for read-only assessor operations within the SYSTEM1234
                         Product Team's AwesomeCloud account for continuous monitoring of least
                         privilege.</p>
                 </description>
                 <remarks>
                     <p>This step is complete.</p>
-                    <p>GoodRead Product Team and SCA Engineering Support configured the latter's
+                    <p>SYSTEM1234 Product Team and SCA Engineering Support configured the latter's
                         cross-account role trust and authentication and authorization in to the
                         former's account on May 29, 2023.</p>
                 </remarks>
             </step>
             <step uuid="976aadad-b1ce-475b-aa6c-e082537e7902">
-                <title>Automate Cross-Account Login to GoodRead AwesomeCloud Account</title>
+                <title>Automate Cross-Account Login to SYSTEM1234 AwesomeCloud Account</title>
                 <description>
                     <p>The assessor's security automation platform will create a session from their
-                        dedicated will obtain access to the GoodRead Product Team's AwesomeCloud
+                        dedicated will obtain access to the SYSTEM1234 Product Team's AwesomeCloud
                         account with their single sign-on credentials to a read-only assessor role.</p>
                 </description>
                 <remarks>
                     <p>This step is complete.</p>
-                    <p>GoodRead Product Team and SCA Engineering Support tested scripts from the
+                    <p>SYSTEM1234 Product Team and SCA Engineering Support tested scripts from the
                         security automation platform interactively on May 30, 2023, to confirm they
                         work ahead of June 2023 continuous monitoring cycle.</p>
                 </remarks>
             </step>
             <step uuid="18ce4e19-7432-4484-8e75-2dd8f05668cf">
-                <title>Analyze GoodRead Developer and System Engineer Roles for Least Privilege</title>
+                <title>Analyze SYSTEM1234 Developer and System Engineer Roles for Least Privilege</title>
                 <description>
                     <p>Once authenticated and authorized with a cross-account session, the security
                         automation pipeline will execute scripts developed and maintained by the
                         assessor's engineering support staff. It will analyze the permitted actions
-                        for the developer and system engineer roles in the GoodRead Product Team's
+                        for the developer and system engineer roles in the SYSTEM1234 Product Team's
                         AwesomeCloud account to confirm they are designed and implement to
                         facilitate only least privilege operation. Examples are included below.</p>
                     <ul>
-                        <li>For the GoodRead developer role in their AwesomeCloud account, the
+                        <li>For the SYSTEM1234 developer role in their AwesomeCloud account, the
                             developer role may only permit the user with this role to check the IP
                             addresses and status of the Awesome Compute Service server instances.
                             This role will not permit the user to create, change, or delete the
                             instances. Similarly, the developer will permit a user to perform
                             actions to see IP addresses of an Awesome Load Balancer instance, but
                             not add, change, or delete the instances.</li>
-                        <li>For the GoodRead system engineer role in their AwesomeCloud account, the
+                        <li>For the SYSTEM1234 system engineer role in their AwesomeCloud account, the
                             system engineer role may only permit actions where the user can add,
                             change, or delete instances for approved services (i.e. Awesome Compute
                             Service, Awesome Load Balancer, et cetera). The role may not permit
@@ -114,9 +116,9 @@
         </activity>
     </local-definitions>
     <result uuid="a1d20136-37e0-42aa-9834-4e9d8c36d798">
-        <title>IFA GoodRead Continous Monitoring Results June 2023</title>
+        <title>IFA SYSTEM1234 Continuous Monitoring Results June 2023</title>
         <description>
-            <p>Automated monthly continuous monitoring of the GoodRead information system's cloud
+            <p>Automated monthly continuous monitoring of the SYSTEM1234 information system's cloud
                 infrastructure recorded observations below. Additionally, contingent upon the
                 confidence level of the observations and possible risks, confirmed findings may be
                 opened.</p>
@@ -145,7 +147,7 @@
             </control-selection>
         </reviewed-controls>
         <observation uuid="8807eb6e-0c05-43bc-8438-799739615e34">
-            <title>AwesomeCloud IAM Roles Test - GoodRead System Engineer Role</title>
+            <title>AwesomeCloud IAM Roles Test - SYSTEM1234 System Engineer Role</title>
             <description>
                 <p>Test AwesomeCloud IAM Roles for least privilege design and implementation.</p>
             </description>
@@ -156,8 +158,8 @@
             <expires>2023-07-01T00:00:00-04:00</expires>
             <remarks>
                 <p>The assessor's security automation platform analyzed all roles specific to the
-                    GoodRead Product Team, not those managed by the Office of Information
-                    Technology. The <code>IFA-GoodRead-SystemEngineer</code> role in their respective
+                    SYSTEM1234 Product Team, not those managed by the Office of Information
+                    Technology. The <code>IFA-SYSTEM1234-SystemEngineer</code> role in their respective
                     AwesomeCloud account permitted use of the following high-risk actions.</p>
                 <ul>
                     <li>awesomecloud:auditlog:DeleteAccountAuditLog</li>
@@ -168,7 +170,7 @@
             </remarks>
         </observation>
         <observation uuid="4a2fb32e-9be9-43cf-b717-e9e47de061bd">
-            <title>AwesomeCloud IAM Roles Test - GoodRead Developer Role</title>
+            <title>AwesomeCloud IAM Roles Test - SYSTEM1234 Developer Role</title>
             <description>
                 <p>Test AwesomeCloud IAM Roles for least privilege design and implementation.</p>
             </description>
@@ -179,15 +181,15 @@
             <expires>2023-07-01T00:00:00-04:00</expires>
             <remarks>
                 <p>The assessor's security automation platform detected that the developer's role is
-                    permitted to perform only permissible actions in the GoodRead AwesomeCloud
+                    permitted to perform only permissible actions in the SYSTEM1234 AwesomeCloud
                     account in accordance with the agency's least privilege policy and procedures.</p>
             </remarks>
         </observation>
         <risk uuid="0cfa750e-3553-47ba-a7ba-cf84a884d261">
-            <title>GoodRead System Engineers Have Over-Privileged Access to Cloud Infrastructure
+            <title>SYSTEM1234 System Engineers Have Over-Privileged Access to Cloud Infrastructure
                 Account</title>
             <description>
-                <p>A user in the GoodRead cloud environment with the privileges of a system engineer
+                <p>A user in the SYSTEM1234 cloud environment with the privileges of a system engineer
                     can exceed the intended privileges for their related business function. They can
                     delete all historical audit records and remove important security monitoring
                     functions for the IFA Security Operations Center staff.</p>
@@ -199,7 +201,7 @@
                     causing significant harm with no forensic evidence to recover the system.
                     Regardless of the extent and duration of a potential incident, such a
                     configuration greatly increases the risk of an insider threat if there were
-                    likely to a potential insider threat in the GoodRead Product Team.</p>
+                    likely to a potential insider threat in the SYSTEM1234 Product Team.</p>
                 <p>If such an insider threat existed and acted with this misconfigruation, the
                     resulting event could cause significant financial and reputational risk to IFA's
                     Administrator, executive staff, and the agency overall.</p>
@@ -207,10 +209,10 @@
             <status>investigating</status>
         </risk>
         <finding uuid="45d8a6c2-1368-4bad-9ba0-7141f0a32889">
-            <title>GoodRead AwesomeCloud Account's System Engineer Role Permits High Risk Actions</title>
+            <title>SYSTEM1234 AwesomeCloud Account's System Engineer Role Permits High Risk Actions</title>
             <description>
                 <p>The assessor's security automation platform detected that the system engineer's
-                    role is permitted to perform the following actions in the GoodRead AwesomeCloud
+                    role is permitted to perform the following actions in the SYSTEM1234 AwesomeCloud
                     account.</p>
                 <ul>
                     <li>Delete and reset account audit logs.</li>
