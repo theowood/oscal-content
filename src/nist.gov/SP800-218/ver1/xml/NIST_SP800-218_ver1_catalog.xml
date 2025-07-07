@@ -3498,7 +3498,9 @@
             <citation>
                 <text>Ross R, McEvilley M, Oren J (2016) Systems Security Engineering:
                     Considerations for a Multidisciplinary Approach in the Engineering of
-                    Trustworthy Secure Systems. (National Institute of Standards and</text>
+                    Trustworthy Secure Systems. (National Institute of Standards and Technology, 
+                    Gaithersburg, MD), NIST Special Publication (SP) 800-160, Volume 1. Includes 
+                    updates as of March 21, 2018.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-160v1" />
         </resource>
@@ -3539,7 +3541,7 @@
             <citation>
                 <text>International Organization for Standardization (ISO)/International
                     Electrotechnical Commission (IEC), Information technology – Security techniques
-                    – Application security – Part 1: Overview and c</text>
+                    – Application security – Part 1: Overview and concepts, ISO/IEC 27034-1:2011, 2011.</text>
             </citation>
             <rlink href="https://www.iso.org/standard/44378.html" />
         </resource>
@@ -3644,7 +3646,7 @@
             <citation>
                 <text>International Organization for Standardization (ISO)/International
                     Electrotechnical Commission (IEC), Information technology – Security techniques
-                    – Vulnerability disclosure, ISO/IEC 29147:2018, 2</text>
+                    – Vulnerability disclosure, ISO/IEC 29147:2018, 2018.</text>
             </citation>
             <rlink href="https://www.iso.org/standard/72311.html" />
         </resource>
@@ -3653,7 +3655,7 @@
             <citation>
                 <text>International Organization for Standardization (ISO)/International
                     Electrotechnical Commission (IEC), Information technology – Security techniques
-                    – Vulnerability handling processes, ISO/IEC 30111</text>
+                    – Vulnerability handling processes, ISO/IEC 30111:2019, 2019.</text>
             </citation>
             <rlink href="https://www.iso.org/standard/69725.html" />
         </resource>

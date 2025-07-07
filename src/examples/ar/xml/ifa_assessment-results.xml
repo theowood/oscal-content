@@ -37,7 +37,7 @@
             <p>In this version of the artifact, the content was updated to OSCAL v1.1.3 and the system name was changed. Imported Assessment Plan was corrected. Other enhancements were implemented.</p>
         </remarks>
     </metadata>
-    <import-ap href="../../ap/xml/ifa_assessment-plan-example.xml" />
+    <import-ap href="../../ap/xml/ifa_assessment-plan.xml" />
     <local-definitions>
         <activity uuid="cf5d53fe-6043-4c68-9ed6-6b258909febf">
             <title>Test System Elements for Least Privilege Design and Implementation</title>
