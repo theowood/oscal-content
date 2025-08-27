@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-          uuid="0695844e-03cb-4ad1-a173-b3ff96de837b">
+          uuid="e6a32060-7395-471a-9c4c-e603e61c9a02">
    <metadata>
-      <title>NIST Special Publication 800-53 Revision 5.1.1 PRIVACY BASELINE</title>
-      <last-modified>2024-02-13T17:43:40.164712Z</last-modified>
-      <version>5.1.1+u4</version>
-      <oscal-version>1.1.2</oscal-version>
+      <title>Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 PRIVACY BASELINE</title>
+      <last-modified>2025-08-27T00:39:50.246082Z</last-modified>
+      <version>5.2.0</version>
+      <oscal-version>1.1.3</oscal-version>
       <prop name="resolution-tool"
              value="OSCAL Profile Resolver XSLT Pipeline OPRXP"/>
       <link href="NIST_SP-800-53_rev5_PRIVACY-baseline_profile.xml"
              rel="source-profile"/>
       <role id="creator">
-         <title>Document Creator</title>
+         <title>OSCAL Version Creator</title>
       </role>
-      <role id="contact">
+      <role id="contact-creator">
          <title>Contact</title>
       </role>
-      <party uuid="11f1de66-89ba-499d-903e-56418e95af9d" type="organization">
-         <name>Joint Task Force, Transformation Initiative</name>
+      <role id="publisher">
+         <title>SP 800-53 Publisher</title>
+      </role>
+      <role id="contact-publisher">
+         <title>Contact</title>
+      </role>
+      <party type="organization" uuid="41a93829-b76b-43ec-b9e7-250553511549">
+         <name>Joint Task Force, Interagency Working Group</name>
          <email-address>sec-cert@nist.gov</email-address>
          <address>
             <addr-line>National Institute of Standards and Technology</addr-line>
@@ -29,15 +35,36 @@
             <postal-code>20899-8930</postal-code>
          </address>
       </party>
-      <responsible-party role-id="creator">
-         <party-uuid>11f1de66-89ba-499d-903e-56418e95af9d</party-uuid>
+      <party uuid="98c78f9b-5d50-4b01-b47f-d16801e8d0ab" type="organization">
+         <name>OSCAL Program</name>
+         <short-name>NIST</short-name>
+         <email-address>oscal@nist.gov</email-address>
+         <address>
+            <addr-line>National Institute of Standards and Technology</addr-line>
+            <addr-line>Attn: Computer Security Division</addr-line>
+            <addr-line>Information Technology Laboratory</addr-line>
+            <addr-line>100 Bureau Drive (Mail Stop 2000)</addr-line>
+            <city>Gaithersburg</city>
+            <state>MD</state>
+            <postal-code>20899-2000</postal-code>
+         </address>
+      </party>
+      <responsible-party role-id="publisher">
+         <party-uuid>41a93829-b76b-43ec-b9e7-250553511549</party-uuid>
       </responsible-party>
-      <responsible-party role-id="contact">
-         <party-uuid>11f1de66-89ba-499d-903e-56418e95af9d</party-uuid>
+      <responsible-party role-id="contact-publisher">
+         <party-uuid>41a93829-b76b-43ec-b9e7-250553511549</party-uuid>
+      </responsible-party>
+      <responsible-party role-id="creator">
+         <party-uuid>98c78f9b-5d50-4b01-b47f-d16801e8d0ab</party-uuid>
+      </responsible-party>
+      <responsible-party role-id="contact-creator">
+         <party-uuid>98c78f9b-5d50-4b01-b47f-d16801e8d0ab</party-uuid>
       </responsible-party>
    </metadata>
    <group class="family" id="ac">
       <title>Access Control</title>
+      <prop name="label" value="AC"/>
       <control class="SP800-53" id="ac-1">
          <title>Policy and Procedures</title>
          <param id="ac-1_prm_1">
@@ -495,6 +522,7 @@
    </group>
    <group class="family" id="at">
       <title>Awareness and Training</title>
+      <prop name="label" value="AT"/>
       <control class="SP800-53" id="at-1">
          <title>Policy and Procedures</title>
          <param id="at-1_prm_1">
@@ -1374,6 +1402,7 @@
    </group>
    <group class="family" id="au">
       <title>Audit and Accountability</title>
+      <prop name="label" value="AU"/>
       <control class="SP800-53" id="au-1">
          <title>Policy and Procedures</title>
          <param id="au-1_prm_1">
@@ -2078,6 +2107,7 @@
    </group>
    <group class="family" id="ca">
       <title>Assessment, Authorization, and Monitoring</title>
+      <prop name="label" value="CA"/>
       <control class="SP800-53" id="ca-1">
          <title>Policy and Procedures</title>
          <param id="ca-1_prm_1">
@@ -3140,6 +3170,7 @@
    </group>
    <group class="family" id="cm">
       <title>Configuration Management</title>
+      <prop name="label" value="CM"/>
       <control class="SP800-53" id="cm-1">
          <title>Policy and Procedures</title>
          <param id="cm-1_prm_1">
@@ -3500,6 +3531,7 @@
    </group>
    <group class="family" id="ir">
       <title>Incident Response</title>
+      <prop name="label" value="IR"/>
       <control class="SP800-53" id="ir-1">
          <title>Policy and Procedures</title>
          <param id="ir-1_prm_1">
@@ -4836,6 +4868,7 @@
    </group>
    <group class="family" id="mp">
       <title>Media Protection</title>
+      <prop name="label" value="MP"/>
       <control class="SP800-53" id="mp-1">
          <title>Policy and Procedures</title>
          <param id="mp-1_prm_1">
@@ -5284,6 +5317,7 @@
    </group>
    <group class="family" id="pe">
       <title>Physical and Environmental Protection</title>
+      <prop name="label" value="PE"/>
       <control class="SP800-53" id="pe-8">
          <title>Visitor Access Records</title>
          <param id="pe-08_odp.01">
@@ -5456,6 +5490,7 @@
    </group>
    <group class="family" id="pl">
       <title>Planning</title>
+      <prop name="label" value="PL"/>
       <control class="SP800-53" id="pl-1">
          <title>Policy and Procedures</title>
          <param id="pl-1_prm_1">
@@ -6684,6 +6719,7 @@
    </group>
    <group class="family" id="pm">
       <title>Program Management</title>
+      <prop name="label" value="PM"/>
       <part name="overview" id="pm_ovw">
          <title>Program Management Controls</title>
          <p>
@@ -9946,6 +9982,7 @@
    </group>
    <group class="family" id="ps">
       <title>Personnel Security</title>
+      <prop name="label" value="PS"/>
       <control class="SP800-53" id="ps-6">
          <title>Access Agreements</title>
          <param id="ps-06_odp.01">
@@ -10074,6 +10111,7 @@
    </group>
    <group class="family" id="pt">
       <title>Personally Identifiable Information Processing and Transparency</title>
+      <prop name="label" value="PT"/>
       <control class="SP800-53" id="pt-1">
          <title>Policy and Procedures</title>
          <param id="pt-1_prm_1">
@@ -11407,6 +11445,7 @@
    </group>
    <group class="family" id="ra">
       <title>Risk Assessment</title>
+      <prop name="label" value="RA"/>
       <control class="SP800-53" id="ra-1">
          <title>Policy and Procedures</title>
          <param id="ra-1_prm_1">
@@ -12079,6 +12118,7 @@
    </group>
    <group class="family" id="sa">
       <title>System and Services Acquisition</title>
+      <prop name="label" value="SA"/>
       <control class="SP800-53" id="sa-1">
          <title>Policy and Procedures</title>
          <param id="sa-1_prm_1">
@@ -12743,6 +12783,7 @@
             <p>Security and privacy functional requirements are typically derived from the high-level security and privacy requirements described in <a href="#sa-2">SA-2</a> . The derived requirements include security and privacy capabilities, functions, and mechanisms. Strength requirements associated with such capabilities, functions, and mechanisms include degree of correctness, completeness, resistance to tampering or bypass, and resistance to direct attack. Assurance requirements include development processes, procedures, and methodologies as well as the evidence from development and assessment activities that provide grounds for confidence that the required functionality is implemented and possesses the required strength of mechanism. <a href="#e3cc0520-a366-4fc9-abc2-5272db7e3564">SP 800-160-1</a> describes the process of requirements engineering as part of the system development life cycle.</p>
             <p>Controls can be viewed as descriptions of the safeguards and protection capabilities appropriate for achieving the particular security and privacy objectives of the organization and for reflecting the security and privacy requirements of stakeholders. Controls are selected and implemented in order to satisfy system requirements and include developer and organizational responsibilities. Controls can include technical, administrative, and physical aspects. In some cases, the selection and implementation of a control may necessitate additional specification by the organization in the form of derived requirements or instantiated control parameter values. The derived requirements and control parameter values may be necessary to provide the appropriate level of implementation detail for controls within the system development life cycle.</p>
             <p>Security and privacy documentation requirements address all stages of the system development life cycle. Documentation provides user and administrator guidance for the implementation and operation of controls. The level of detail required in such documentation is based on the security categorization or classification level of the system and the degree to which organizations depend on the capabilities, functions, or mechanisms to meet risk response expectations. Requirements can include mandated configuration settings that specify allowed functions, ports, protocols, and services. Acceptance criteria for systems, system components, and system services are defined in the same manner as the criteria for any organizational acquisition or procurement.</p>
+            <p>Organizations can determine other requirements that support security and operations, to include responsibilities for the organization and developer, and notification and timing requirements for support, maintenance and updates.</p>
          </part>
          <part id="sa-4_obj" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-04"/>
@@ -12933,6 +12974,7 @@
          <link rel="reference" href="#9be5d661-421f-41ad-854e-86f98b811891"/>
          <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
          <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
+         <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989"/>
          <link rel="related" href="#pl-8"/>
          <link rel="related" href="#pm-7"/>
          <link rel="related" href="#ra-2"/>
@@ -13470,6 +13512,7 @@
    </group>
    <group class="family" id="sc">
       <title>System and Communications Protection</title>
+      <prop name="label" value="SC"/>
       <control class="SP800-53" id="sc-7">
          <title>Boundary Protection</title>
          <param id="sc-07_odp">
@@ -13735,6 +13778,7 @@
    </group>
    <group class="family" id="si">
       <title>System and Information Integrity</title>
+      <prop name="label" value="SI"/>
       <control class="SP800-53" id="si-1">
          <title>Policy and Procedures</title>
          <param id="si-1_prm_1">
